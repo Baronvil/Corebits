@@ -11,7 +11,7 @@ export const Section: React.FC<SectionProps> = ({ id, className = '', children, 
   return (
     <section 
       id={id} 
-      className={`py-20 md:py-28 px-4 sm:px-6 lg:px-8 ${dark ? 'bg-slate-900 text-white' : 'bg-white text-slate-900'} ${className}`}
+      className={`py-20 md:py-28 px-4 sm:px-6 lg:px-8 transition-colors duration-300 ${dark ? 'bg-slate-900 text-white' : 'bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100'} ${className}`}
     >
       <div className="max-w-7xl mx-auto">
         {children}
